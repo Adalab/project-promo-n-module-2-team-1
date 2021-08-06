@@ -1,12 +1,14 @@
 .preview {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    // hacer degradado
-    background-color:#bfcdd0;
-    min-width: 320px;
+    background-color: #bfcdd0;
     height: 457px;
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
     &__button {
         display: flex;
@@ -24,16 +26,16 @@
     }
 
     &__card {
-        background-color: $white;
         width: 240px;
         height: 329px;
+        background-color: $white;
+        box-shadow: 0 1px 10px 0  lighten($black, 55%), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
 
         &--description {
-            height: 75px;
             display: flex;
             justify-content: flex-start;
             align-items: center;
-
+            height: 75px;
         }
 
         &--bullet {
@@ -48,22 +50,18 @@
             flex-direction: column;
             justify-content: space-between;
             height: 42px;
+            font-family: $title-font;
+            color: $primary-color-alt;
         }
 
         &--name {
-            font-family: $title-font;
             font-size: 18px;
             font-weight: 800;
-            color: $primary-color-alt;
-            // line-height: 1.11;
         }
 
         &--job {
-            font-family: $title-font;
             font-size: 16px;
             font-weight: 500;
-            color: $primary-color-alt;
-            // line-height: 1.25;
         }
     }
     
@@ -90,7 +88,6 @@
         
         &--link {
             color: $primary-color-alt;
-            
         }
     }
 
