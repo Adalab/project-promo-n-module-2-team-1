@@ -1,3 +1,9 @@
+body {
+  font-family: $body-font;
+  color: $primary-color-alt;
+  font-size: 13px;
+}
+
 .page-wrapper {
     margin: 0 15px;
 
@@ -10,3 +16,5 @@
         max-width: 1120px;
     }
 }
+
+
