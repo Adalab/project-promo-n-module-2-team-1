@@ -1,62 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awesome profile-cards</title>
-</head>
-<body>
-    <header>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@500;800&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
 
-    </header>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+</head>
+
+<body>
+    <include src="./partials/header.html"></include>
+
     <main>
 
         <!-- card -->
-        <section>
-
-            <h2>Nombre Apellido</h2>
-            <h3>Front-end developer</h3>
-            <img src="" alt="">
-            <ul>
-                <li><a href="">icono teléfono</a></li>
-                <li><a href="">icono email</a></li>
-                <li><a href="">icono linkedin</a></li>
-                <li><a href="">icono Github</a></li>
-            </ul>
-
-        </section>
-
+        <include src="./partials/section-preview.html"></include>
+        
         <!-- diseña  -->
-        <section>
-
-            <h2>Diseña</h2>
-            <div> paleta 1</div>
-            <div> paleta 2</div>
-            <div> paleta 3</div>
-
-        </section>
+        <!-- <include src="./partials/design.html"></include> -->
+        
 
         <!-- rellena - form-->
-        <section>
+        <!-- <section>
             Nombre completo
             Puesto
-            Imagen de perfil 
+            Imagen de perfil
             <button> Imagen de perfil </button>
             Email
             Teléfono
             Linkedin
             Github
-        </section>
+        </section> -->
 
 
         <!-- comparte -->
-        <section>
+        <!-- <section>
             <div>Crear tarjeta</div>
             <h2>La tarjeta ha sido creada</h2>
             <p>https://awesome-profile-card.com?id=A456DF0001</p>
             <button><a href="">(icono twitter) Compartir en twitter</a></button>
-        </section>
+        </section> -->
 
     </main>
 
@@ -66,4 +59,5 @@
 
     <script src="./assets/js/main.js"></script>
 </body>
+
 </html>

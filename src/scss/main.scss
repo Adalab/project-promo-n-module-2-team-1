@@ -1,5 +1,6 @@
-@import "core/variables";
 @import "core/reset";
+@import "core/variables";
+@import "core/mixins";
 @import "components/code";
 @import "components/links";
 @import "layout/page";
@@ -8,3 +9,4 @@
 @import "pages/index";
 @import "layout/section-preview";
 @import "layout/section-options";
+@import "layout/landing-main";
