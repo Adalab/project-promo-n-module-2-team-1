@@ -1,10 +1,41 @@
+<fieldset class="design">
+  <include
+    src="./collapsable.html"
+    icon="fa-object-ungroup"
+    title="Diseña"
+  ></include>
 
+  <h3 class="design__title">Colores</h3>
 
-<section>
+  <div class="design__palette--one">
+    <label for="palette-one">
+      <input id="palette-one" type="radio" value="palette-one" name="pallets" />
+      <div class="design__palette--one color-one"></div>
+      <div class="design__palette--one color-two"></div>
+      <div class="design__palette--one color-three"></div>
+    </label>
+  </div>
 
-    <h2>Diseña</h2>
-    <div> paleta 1</div>
-    <div> paleta 2</div>
-    <div> paleta 3</div>
+  <div class="design__palette--two">
+    <label for="palette-two">
+      <input id="palette-two" type="radio" value="palette-two" name="pallets" />
+      <div class="design__palette--two color-one"></div>
+      <div class="design__palette--two color-two"></div>
+      <div class="design__palette--two color-three"></div>
+    </label>
+  </div>
 
-</section>
+  <div class="design__palette--three">
+    <label for="palette-three">
+      <input
+        id="palette-three"
+        type="radio"
+        value="palette-three"
+        name="pallets"
+      />
+      <div class="design__palette--three color-one"></div>
+      <div class="design__palette--three color-two"></div>
+      <div class="design__palette--three color-three"></div>
+    </label>
+  </div>
+</fieldset>
