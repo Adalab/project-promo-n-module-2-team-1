@@ -7,11 +7,6 @@
         margin-left   : 39px;
     }
 
-    &__wrapper--pallets {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-
     &__title {
         font-size:14px;
         font-weight:normal;
@@ -20,6 +15,15 @@
         font-family: $body-font;
     }
 
+    &__wrapper--pallets {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__wrapper-palette {
+        display: flex;
+        margin-bottom: 30px;
+    }
 
     &__palette--one {
         
