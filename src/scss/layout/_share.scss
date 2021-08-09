@@ -12,11 +12,10 @@
     width: 199px;
     height: 50px;
     border-radius: 12px;
-    border-color: white;
     background-color: $dull;
     border: 0px;
     padding: 0px;
-    color: white;
+    color: $white;
     font-size: 18px;
     margin: 13px 18px 13px 17px;
     text-transform: uppercase;
@@ -57,7 +56,7 @@
   }
   &__button--link {
     text-decoration: none;
-    color: white;
+    color: $white;
     font-size: 14px;
     line-height: 1.43;
   }
