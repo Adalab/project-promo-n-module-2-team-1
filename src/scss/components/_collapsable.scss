@@ -1,4 +1,4 @@
-&__section--title {
+.fill__section--title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -19,6 +19,7 @@
     .fa-keyboard {
       color: $icon-color;
     }
+
     .title-text {
       text-transform: uppercase;
       font-family: $body-font;
@@ -27,6 +28,7 @@
       margin-left: 10px;
     }
   }
+
   .fa-chevron-down {
     color: $gun-metal;
   }
