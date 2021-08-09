@@ -76,31 +76,99 @@
         </section>
         
         <!-- diseña  -->
-        <!-- 
+        <fieldset class="design">
+          <div class="page-wrapper">
+            <div class="fill__section--title">
+              <div class="title-icon">
+                <i class="far fa-object-ungroup"></i>
+                <h2 class="title-text">Diseña</h2>
+              </div>
+              <i class="far fa-chevron-down"></i>
+            </div>
+          </div>
 
- <section>
 
-     <h2>Diseña</h2>
-     <div> paleta 1</div>
-     <div> paleta 2</div>
-     <div> paleta 3</div>
+          <h3 class="design__title">Colores</h3>
 
- </section> -->
+          <div class="design__palette--one">
+            <label for="palette-one">
+              <input id="palette-one" type="radio" value="palette-one" name="pallets" />
+              <div class="design__palette--one color-one"></div>
+              <div class="design__palette--one color-two"></div>
+              <div class="design__palette--one color-three"></div>
+            </label>
+          </div>
+
+          <div class="design__palette--two">
+            <label for="palette-two">
+              <input id="palette-two" type="radio" value="palette-two" name="pallets" />
+              <div class="design__palette--two color-one"></div>
+              <div class="design__palette--two color-two"></div>
+              <div class="design__palette--two color-three"></div>
+            </label>
+          </div>
+
+          <div class="design__palette--three">
+            <label for="palette-three">
+              <input
+                id="palette-three"
+                type="radio"
+                value="palette-three"
+                name="pallets"
+              />
+              <div class="design__palette--three color-one"></div>
+              <div class="design__palette--three color-two"></div>
+              <div class="design__palette--three color-three"></div>
+            </label>
+          </div>
+        </fieldset>
+
         
 
         <!-- rellena - form-->
-        <!-- <section>
-            Nombre completo
-            Puesto
-            Imagen de perfil
-            <button> Imagen de perfil </button>
-            Email
-            Teléfono
-            Linkedin
-            Github
-        </section> -->
+        <section class="fill">
+
+                <!-- <div class="fill__section--title">
+                    <div class="title-icon">
+                        <i class="far fa-keyboard"></i>
+                        <h2 class="title-text">rellena</h2>
+                    </div>
+                    <i class="far fa-chevron-down"></i>
+                </div> -->
+                <div class="page-wrapper">
+                  <div class="fill__section--title">
+                    <div class="title-icon">
+                      <i class="far fa-keyboard"></i>
+                      <h2 class="title-text">rellena</h2>
+                    </div>
+                    <i class="far fa-chevron-down"></i>
+                  </div>
+                </div>
 
 
+            <div class="page-wrapper">
+                <fieldset class="fill__section--form">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" name="name" placeholder="Ej: Sally Jill">
+                    <label for="position">Puesto</label>
+                    <input type="text" id="position" name="position" placeholder="Ej: Front-end unicorn">
+                    <label for="photo">Imagen de perfil</label>
+                    <input type="file" id="photo" name="photo">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Ej: sally-hill@gmail.com">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Ej: 555-55-55-55">
+                    <label for="linkedin">Linkedin</label>
+                    <input type="url" id="linkedin" name="linkedin" placeholder="Ej: linkedin.com/in/sally.hill">
+                    <label for="github">Github</label>
+                    <input type="text" id="github" name="github" placeholder="Ej: @sally-hill">
+
+                </fieldset>
+            </div>
+        </section>
+               
+
+    
         <!-- comparte -->
         <!-- <section>
             <div>Crear tarjeta</div>
