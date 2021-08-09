@@ -1,23 +1,34 @@
 <section>
-  <div>
-    <div>
-      <i class="icon fas fa-share-alt"></i>
-      <h2>comparte</h2>
+  <div class="share">
+    <include
+      src="./collapsable.html"
+      icon="icon1 fa-share-alt"
+      title="comparte"
+    ></include>
+
+    <div class="page-wrapper">
+      <div class="share__section--create">
+        <button class="share__section--create__button">
+          <i class="icon2 far fa-address-card"></i>Crear tarjeta
+        </button>
+      </div>
+
+      <div class="share__section--done">
+        <h2 class="share__section--done__text">La tarjeta ha sido creada:</h2>
+        <a class="share__section--done__link" href="#"
+          >https://awesome-profile-card.com?id=A456DF0001
+        </a>
+
+        <button class="share__section--done__button">
+          <a
+            class="share__section--done__button--link"
+            href="#"
+            target="_blank"
+          >
+            <i class="icon3 fab fa-twitter"></i>Compartir en twitter</a
+          >
+        </button>
+      </div>
     </div>
-    <img src="./assets/images/ico-arrow.svg" alt="" />
-    <button class="button__create">
-      <i class="far fa-address-card"></i>crear tarjeta
-    </button>
-  </div>
-
-  <div>
-    <h2>la tarjeta ha sido creada</h2>
-    <a href="#">https://awesome-profile-card.com?id=A456DF0001 </a>
-
-    <button>
-      <a href="#" target="_blank">
-        <i class="fab fa-twitter"></i>compartir en twitter</a
-      >
-    </button>
   </div>
 </section>
