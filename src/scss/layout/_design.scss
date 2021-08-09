@@ -1,0 +1,66 @@
+.design {
+
+    &__container {
+        display       : flex;
+        justify-content: space-between;
+        margin-top    : 22px;
+        margin-left   : 39px;
+    }
+
+    &__title {
+        font-size:14px;
+        font-weight:normal;
+        text-transform: uppercase;
+        color: $primary-color;
+        font-family: $body-font;
+    }
+
+    &__wrapper--pallets {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__wrapper-palette {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    &__palette--one {
+        
+        &-color-one {
+            background-color: $pallete-one-1;
+        }
+        &-color-two {
+            background-color: $pallete-one-2;
+        }
+        &-color-three {
+            background-color: $pallete-one-3;
+        }
+    }
+
+    &__palette--two {
+        
+        &-color-one {
+            background-color: $pallete-two-1;
+        }
+        &-color-two {
+            background-color: $pallete-two-2;
+        }
+        &-color-three {
+            background-color: $pallete-two-3;
+        }
+    }
+
+    &__palette--three {
+        
+        &-color-one {
+            background-color: $pallete-three-1;
+        }
+        &-color-two {
+            background-color: $pallete-three-2;
+        }
+        &-color-three {
+            background-color: $pallete-three-3;
+        }
+    }
+}
