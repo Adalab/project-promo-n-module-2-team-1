@@ -1,4 +1,4 @@
-.fill__section--title {
+.collapsable__section--title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -16,7 +16,8 @@
     flex-direction: row;
     align-items: center;
 
-    .fa-keyboard,.fa-object-ungroup {
+    .fa-keyboard,
+    .fa-object-ungroup {
       color: $icon-color;
     }
 

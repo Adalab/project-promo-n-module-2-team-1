@@ -1,40 +1,6 @@
 .fill {
   margin: 10px 0 30px;
 
-  // &__section--title {
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: space-between;
-  //   align-items: center;
-  //   border-top: solid 1px #d8d8d8;
-  //   padding-top: 10px;
-
-  //   .fal,
-  //   .far {
-  //     size: 18px;
-  //   }
-
-  //   .title-icon {
-  //     display: flex;
-  //     flex-direction: row;
-  //     align-items: center;
-
-  //     .fa-keyboard {
-  //       color: $icon-color;
-  //     }
-  //     .title-text {
-  //       text-transform: uppercase;
-  //       font-family: $body-font;
-  //       font-size: 18px;
-  //       color: $gun-metal;
-  //       margin-left: 10px;
-  //     }
-  //   }
-  //   .fa-chevron-down {
-  //     color: $gun-metal;
-  //   }
-  // }
-
   &__section--form {
     display: flex;
     flex-direction: column;
