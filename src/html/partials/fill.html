@@ -1,16 +1,16 @@
 <section class="fill">
     <div class="page-wrapper">
-        <div class="fill__section--title">
+        <!-- <div class="fill__section--title">
             <div class="title-icon">
                 <i class="far fa-keyboard"></i>
                 <h2 class="title-text">rellena</h2>
             </div>
             <i class="far fa-chevron-down"></i>
-
-        </div>
+        </div> -->
+        <include src="./partials/collapsable.html" icon="fa-keyboard" title="rellena"></include>
     </div>
     <div class="page-wrapper">
-        <form class="fill__section--form" method="post" action="">
+        <fieldset class="fill__section--form">
             <label for="name">Nombre completo</label>
             <input type="text" id="name" name="name" placeholder="Ej: Sally Jill">
             <label for="position">Puesto</label>
@@ -26,7 +26,7 @@
             <label for="github">Github</label>
             <input type="text" id="github" name="github" placeholder="Ej: @sally-hill">
 
-        </form>
+        </fieldset>
     </div>
 </section>
        
