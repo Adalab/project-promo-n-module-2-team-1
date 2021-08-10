@@ -9,53 +9,55 @@
     <legend class="design__title">Colores</legend>
 
     <div class="design__wrapper--pallets">
-      <div class="design__palette--one">
-        <div class="label-grid">
-          <label for="palette-one"></label>
+
+      <div class="design__palette design__palette--one ">
+        <div class="design__palette--input">
           <input
-            id="palette-one"
-            type="radio"
-            value="palette-one"
-            name="pallets"/>
+          class="design__input"
+          id="palette-one"
+          type="radio"
+          value="palette-one"
+          name="pallets"/>
         </div>
-        <div class="design__wrapper-palette">
-          <div class="box-design design__palette--one-color-one"></div>
-          <div class="box-design design__palette--one-color-two"></div>
-          <div class="box-design design__palette--one-color-three"></div>
-        </div>
+        <label for="palette-one" class="design__wrapper-palette">
+          <span class="box-design design__palette--one-color-one"></span>
+          <span class="box-design design__palette--one-color-two"></span>
+          <span class="box-design design__palette--one-color-three"></span>
+        </label>
       </div>
 
-      <div class="design__palette--two">
-        <label for="palette-two">
-          <input
+        <div class="design__palette design__palette--two">
+          <div class="design__palette--input">
+            <input
+            class="design__input"
             id="palette-two"
             type="radio"
             value="palette-two"
-            name="pallets"
-          />
-          <div class="design__wrapper-palette">
-            <div class="box-design design__palette--two-color-one"></div>
-            <div class="box-design design__palette--two-color-two"></div>
-            <div class="box-design design__palette--two-color-three"></div>
+            name="pallets"/>
           </div>
-        </label>
-      </div>
+          <label for="palette-two" class="design__wrapper-palette">
+            <span class="box-design design__palette--two-color-one"></span>
+            <span class="box-design design__palette--two-color-two"></span>
+            <span class="box-design design__palette--two-color-three"></span>
+          </label>
+          </div>
 
-      <div class="design__palette--three">
-        <label for="palette-three">
-          <input
-            id="palette-three"
-            type="radio"
-            value="palette-three"
-            name="pallets"
-          />
-          <div class="design__wrapper-palette">
-            <div class="box-design design__palette--three-color-one"></div>
-            <div class="box-design design__palette--three-color-two"></div>
-            <div class="box-design design__palette--three-color-three"></div>
-          </div>
-        </label>
-      </div>
+          <div class="design__palette design__palette--three">
+            <div class="design__palette--input">
+              <input
+              class="design__input"
+              id="palette-three"
+              type="radio"
+              value="palette-three"
+              name="pallets"/>
+            </div>
+            <label for="palette-three" class="design__wrapper-palette">
+              <span class="box-design design__palette--three-color-one"></span>
+              <span class="box-design design__palette--three-color-two"></span>
+              <span class="box-design design__palette--three-color-three"></span>
+            </label>
+            </div>
+
     </div>
   </div>
 </fieldset>

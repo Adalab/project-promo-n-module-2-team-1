@@ -15,26 +15,43 @@
         font-family: $body-font;
     }
 
-    &__wrapper--pallets {
-        display: flex;
-        flex-direction: column;
+    &__palette {
+        display: grid;
+        grid-template-columns: 17px 10px 90px;
+        grid-template-rows: 25px 20px;
     }
 
     &__wrapper-palette {
         display: flex;
-        margin-bottom: 30px;
-        grid-column: 2;
+        grid-column: 3;
+    }
+
+    &__palette--input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      
+        border-radius: 50%;
+        width: 17px;
+        height: 17px;
+
+
+        margin: 0;
+        border: 1px solid $pinkish-grey;
+        transition: 0.2s all linear;
+      
+
+
     }
 
     &__palette--one {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
 
-        label-grid {
-            grid-column: 1;
-        }
-
-        
         &-color-one {
             background-color: $pallete-one-1;
         }
@@ -60,7 +77,7 @@
     }
 
     &__palette--three {
-        
+
         &-color-one {
             background-color: $pallete-three-1;
         }
