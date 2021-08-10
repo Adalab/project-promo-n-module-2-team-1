@@ -6,27 +6,25 @@
   ></include>
 
   <div class="page-wrapper design__container">
+    <legend class="design__title">Colores</legend>
 
-    <h3 class="design__title">Colores</h3>
-    
     <div class="design__wrapper--pallets">
-
       <div class="design__palette--one">
-        <label for="palette-one">
+        <div class="label-grid">
+          <label for="palette-one"></label>
           <input
             id="palette-one"
             type="radio"
             value="palette-one"
-            name="pallets"
-          />
-          <div class="design__wrapper-palette">
-            <div class="box-design design__palette--one-color-one"></div>
-            <div class="box-design design__palette--one-color-two"></div>
-            <div class="box-design design__palette--one-color-three"></div>
-          </div>
-        </label>
+            name="pallets"/>
+        </div>
+        <div class="design__wrapper-palette">
+          <div class="box-design design__palette--one-color-one"></div>
+          <div class="box-design design__palette--one-color-two"></div>
+          <div class="box-design design__palette--one-color-three"></div>
+        </div>
       </div>
-      
+
       <div class="design__palette--two">
         <label for="palette-two">
           <input
@@ -59,6 +57,5 @@
         </label>
       </div>
     </div>
-
   </div>
 </fieldset>

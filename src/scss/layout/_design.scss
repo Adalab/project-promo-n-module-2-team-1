@@ -23,9 +23,17 @@
     &__wrapper-palette {
         display: flex;
         margin-bottom: 30px;
+        grid-column: 2;
     }
 
     &__palette--one {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        label-grid {
+            grid-column: 1;
+        }
+
         
         &-color-one {
             background-color: $pallete-one-1;
