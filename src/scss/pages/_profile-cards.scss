@@ -1,9 +1,12 @@
+main {
+  background: linear-gradient(#f5f5f5, #ffffff);
+}
 @include tablet {
   .main-responsive {
     display: flex;
     flex-direction: row-reverse;
     margin-top: 27px;
-    margin-left: 40px;
+    //margin-left: 40px;
   }
   .section-prewiew-responsive {
     width: 50%;
