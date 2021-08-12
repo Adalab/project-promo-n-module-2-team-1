@@ -40,7 +40,7 @@
             <div class="preview__card--description">
               <div class="preview__card--bullet"></div>
               <div class="preview__card--title">
-                <h2 class="preview__card--name">Nombre Apellido</h2>
+                <h2 class="preview__card--name js_preview_name">Nombre Apellido</h2>
                 <h3 class="preview__card--job">Front-end developer</h3>
               </div>
             </div>
@@ -80,7 +80,7 @@
                 <i class="far fa-object-ungroup"></i>
                 <h2 class="title-text">Diseña</h2>
               </div>
-              <i class="far fa-chevron-down"></i>
+              <i class="far fa-chevron-down js_arrow_design"></i>
             </div>
           </div>
 
@@ -91,7 +91,13 @@
             <div class="design__wrapper--pallets">
               <div class="design__palette design__palette--one">
                 <div class="design__palette--input">
-                  <input class="design__input" id="palette-one" type="radio" value="palette-one" name="pallets" />
+                  <input
+                    class="design__input"
+                    id="palette-one"
+                    type="radio"
+                    value="palette-one"
+                    name="pallets"
+                  />
                 </div>
                 <label for="palette-one" class="design__wrapper-palette">
                   <span class="box-design design__palette--one-color-one"></span>
@@ -102,7 +108,13 @@
 
               <div class="design__palette design__palette--two">
                 <div class="design__palette--input">
-                  <input class="design__input" id="palette-two" type="radio" value="palette-two" name="pallets" />
+                  <input
+                    class="design__input"
+                    id="palette-two"
+                    type="radio"
+                    value="palette-two"
+                    name="pallets"
+                  />
                 </div>
                 <label for="palette-two" class="design__wrapper-palette">
                   <span class="box-design design__palette--two-color-one"></span>
@@ -113,7 +125,13 @@
 
               <div class="design__palette design__palette--three">
                 <div class="design__palette--input">
-                  <input class="design__input" id="palette-three" type="radio" value="palette-three" name="pallets" />
+                  <input
+                    class="design__input"
+                    id="palette-three"
+                    type="radio"
+                    value="palette-three"
+                    name="pallets"
+                  />
                 </div>
                 <label for="palette-three" class="design__wrapper-palette">
                   <span class="box-design design__palette--three-color-one"></span>
@@ -124,50 +142,87 @@
             </div>
           </div>
         </fieldset>
+
         <fieldset class="fill">
-
-            <div class="page-wrapper">
-              <div class="collapsable__section--title js_collapsable_fill_button">
-                <div class="title-icon">
-                  <i class="far fa-keyboard"></i>
-                  <h2 class="title-text">rellena</h2>
-                </div>
-                <i class="far fa-chevron-down"></i>
+          <div class="page-wrapper">
+            <div class="collapsable__section--title js_collapsable_fill_button">
+              <div class="title-icon">
+                <i class="far fa-keyboard"></i>
+                <h2 class="title-text">rellena</h2>
               </div>
+              <i class="far fa-chevron-down js_arrow_fill"></i>
             </div>
+          </div>
 
 
-            <div class="page-wrapper js_collapsable_fill hidden">
-                <section class="fill__section--form">
-                    <label for="name">Nombre completo</label>
-                    <input type="text" id="name" name="name" placeholder="Ej: Sally Jill">
+          <div class="page-wrapper js_collapsable_fill hidden">
+            <section class="fill__section--form">
+              <label for="name">Nombre completo</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Ej: Sally Jill"
+                class="name js_name"
+              />
 
-                    <label for="position">Puesto</label>
-                    <input type="text" id="position" name="position" placeholder="Ej: Front-end unicorn">
+              <label for="position">Puesto</label>
+              <input
+                type="text"
+                id="position"
+                name="position"
+                placeholder="Ej: Front-end unicorn"
+              />
 
-                    <label for="img-selector">Imagen de perfil</label>
-                    <div class="action">
-                        <label class="action__upload-btn" for="img-selector">Añadir imagen</label>
-                        <input type="file" name="" id="img-selector" class="action__hiddenField js__profile-upload-btn">
-                        <div class="profile__preview js__profile-preview">
-                        </div>
-                    </div>
+              <label for="img-selector">Imagen de perfil</label>
+              <div class="action">
+                <label class="action__upload-btn" for="img-selector"
+                  >Añadir imagen</label
+                >
+                <input
+                  type="file"
+                  name=""
+                  id="img-selector"
+                  class="action__hiddenField js__profile-upload-btn"
+                />
+                <div class="profile__preview js__profile-preview"></div>
+              </div>
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Ej: sally-hill@gmail.com">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Ej: sally-hill@gmail.com"
+              />
 
-                    <label for="phone">Teléfono</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Ej: 555-55-55-55">
+              <label for="phone">Teléfono</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Ej: 555-55-55-55"
+              />
 
-                    <label for="linkedin">LinkedIn</label>
-                    <input type="url" id="linkedin" name="linkedin" placeholder="Ej: linkedin.com/in/sally.hill">
+              <label for="linkedin">LinkedIn</label>
+              <input
+                type="url"
+                id="linkedin"
+                name="linkedin"
+                placeholder="Ej: linkedin.com/in/sally.hill"
+              />
 
-                    <label for="github">GitHub</label>
-                    <input type="text" id="github" name="github" placeholder="Ej: @sally-hill">
-
-                </section>
-            </div>
+              <label for="github">GitHub</label>
+              <input
+                type="text"
+                id="github"
+                name="github"
+                placeholder="Ej: @sally-hill"
+              />
+            </section>
+          </div>
         </fieldset>
+
         <section>
           <div class="share">
             <div class="page-wrapper">
@@ -176,7 +231,7 @@
                   <i class="far icon1 fas fa-share-alt"></i>
                   <h2 class="title-text">comparte</h2>
                 </div>
-                <i class="far fa-chevron-down"></i>
+                <i class="far fa-chevron-down js_arrow_share"></i>
               </div>
             </div>
 
@@ -212,8 +267,6 @@
       </section>
 
     </div>
-
-
   </main>
 
   <footer class="footer__container position ">
