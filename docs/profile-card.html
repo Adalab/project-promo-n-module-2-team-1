@@ -2,83 +2,83 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome profile-cards</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@500;800&family=Open+Sans:wght@400;600&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awesome profile-cards</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@500;800&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet" />
 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
 
 <body>
-    <header class="header">
+  <header class="header__profile-cards header">
 
-        <img src="./assets/images/logo-awesome-profile-cards.svg" alt="logo de awesome profile-cards"
-            class="header__image--index" />
+      <a href="index.html"><img src="./assets/images/logo-awesome-profile-cards.svg" alt="logo de awesome profile-cards"
+              class="header__image--index" /></a>
 
-    </header>
+  </header>
 
-    <main>
-
-        <!-- card -->
-        <section class="preview">
-
-          <div class="preview-container">
-            
-            <div class="preview__button">
-              <i class="far fa-trash-alt""></i>
-                <p class=" preview__button--reset">Reset</p>
-            </div>
-
-            <div class="preview__card">
-              <div class="preview__card--description">
-                <div class="preview__card--bullet"></div>
-                <div class="preview__card--title">
-                  <h2 class="preview__card--name">Nombre Apellido</h2>
-                  <h3 class="preview__card--job">Front-end developer</h3>
-                </div>
-              </div>
-              <img src="./assets/images/img_girl.jpg" alt="Foto de la tarjeta" class="preview__photo" />
-              <ul class="preview__rrss">
-                <li class="preview__rrss--phone preview__rrss--item">
-                  <a href="" class="preview__rrss--link">
-                    <i class="fas fa-mobile-alt"></i>
-                  </a>
-                </li>
-                <li class="preview__rrss--item preview__rrss--email">
-                  <a href="" class="preview__rrss--link">
-                    <i class="far fa-envelope"></i>
-                  </a>
-                </li>
-                <li class="preview__rrss--item preview__rrss--linkdin">
-                  <a href="" class="preview__rrss--link">
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-                </li>
-                <li class="preview__rrss--item previe$primary-color-altw__rrss--github">
-                  <a href="" class="preview__rrss--link">
-                    <i class="fab fa-github-alt"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-
+  <main class="profile-cards__main">
+    <div class="main-responsive">
+      <!-- card -->
+      <section class="preview section-prewiew-responsive">
+        <div class="preview-container">
+          <div class="preview__button">
+            <i class="far fa-trash-alt"></i>
+            <p class="preview__button--reset">Reset</p>
           </div>
 
-        </section>
-        
-        <!-- diseña  -->
+          <div class="preview__card">
+            <div class="preview__card--description">
+              <div class="preview__card--bullet"></div>
+              <div class="preview__card--title">
+                <h2 class="preview__card--name">Nombre Apellido</h2>
+                <h3 class="preview__card--job">Front-end developer</h3>
+              </div>
+            </div>
+            <img
+              src="./assets/images/img_girl.jpg"
+              alt="Foto de la tarjeta"
+              class="preview__photo"
+            />
+            <ul class="preview__rrss">
+              <li class="preview__rrss--phone preview__rrss--item">
+                <a href="" class="preview__rrss--link">
+                  <i class="fas fa-mobile-alt"></i>
+                </a>
+              </li>
+              <li class="preview__rrss--item preview__rrss--email">
+                <a href="" class="preview__rrss--link">
+                  <i class="far fa-envelope"></i>
+                </a>
+              </li>
+              <li class="preview__rrss--item preview__rrss--linkdin">
+                <a href="" class="preview__rrss--link">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li class="preview__rrss--item previe$primary-color-altw__rrss--github">
+                <a href="" class="preview__rrss--link">
+                  <i class="fab fa-github-alt"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section-options-responsive">
         <fieldset class="design">
           <div class="page-wrapper">
-            <div class="fill__section--title">
+            <div class="collapsable__section--title-1 js_collapsable">
               <div class="title-icon">
                 <i class="far fa-object-ungroup"></i>
                 <h2 class="title-text">Diseña</h2>
@@ -87,64 +87,56 @@
             </div>
           </div>
 
+          <div class="page-wrapper design__container js_collapsable_design">
+            <legend class="design__title">Colores</legend>
 
-          <h3 class="design__title">Colores</h3>
+            <div class="design__wrapper--pallets">
+              <div class="design__palette design__palette--one">
+                <div class="design__palette--input">
+                  <input class="design__input" id="palette-one" type="radio" value="palette-one" name="pallets" />
+                </div>
+                <label for="palette-one" class="design__wrapper-palette">
+                  <span class="box-design design__palette--one-color-one"></span>
+                  <span class="box-design design__palette--one-color-two"></span>
+                  <span class="box-design design__palette--one-color-three"></span>
+                </label>
+              </div>
 
-          <div class="design__palette--one">
-            <label for="palette-one">
-              <input id="palette-one" type="radio" value="palette-one" name="pallets" />
-              <div class="design__palette--one color-one"></div>
-              <div class="design__palette--one color-two"></div>
-              <div class="design__palette--one color-three"></div>
-            </label>
-          </div>
+              <div class="design__palette design__palette--two">
+                <div class="design__palette--input">
+                  <input class="design__input" id="palette-two" type="radio" value="palette-two" name="pallets" />
+                </div>
+                <label for="palette-two" class="design__wrapper-palette">
+                  <span class="box-design design__palette--two-color-one"></span>
+                  <span class="box-design design__palette--two-color-two"></span>
+                  <span class="box-design design__palette--two-color-three"></span>
+                </label>
+              </div>
 
-          <div class="design__palette--two">
-            <label for="palette-two">
-              <input id="palette-two" type="radio" value="palette-two" name="pallets" />
-              <div class="design__palette--two color-one"></div>
-              <div class="design__palette--two color-two"></div>
-              <div class="design__palette--two color-three"></div>
-            </label>
-          </div>
-
-          <div class="design__palette--three">
-            <label for="palette-three">
-              <input
-                id="palette-three"
-                type="radio"
-                value="palette-three"
-                name="pallets"
-              />
-              <div class="design__palette--three color-one"></div>
-              <div class="design__palette--three color-two"></div>
-              <div class="design__palette--three color-three"></div>
-            </label>
+              <div class="design__palette design__palette--three">
+                <div class="design__palette--input">
+                  <input class="design__input" id="palette-three" type="radio" value="palette-three" name="pallets" />
+                </div>
+                <label for="palette-three" class="design__wrapper-palette">
+                  <span class="box-design design__palette--three-color-one"></span>
+                  <span class="box-design design__palette--three-color-two"></span>
+                  <span class="box-design design__palette--three-color-three"></span>
+                </label>
+              </div>
+            </div>
           </div>
         </fieldset>
-
-        
-
-        <!-- rellena - form-->
         <section class="fill">
 
-                <!-- <div class="fill__section--title">
-                    <div class="title-icon">
-                        <i class="far fa-keyboard"></i>
-                        <h2 class="title-text">rellena</h2>
-                    </div>
-                    <i class="far fa-chevron-down"></i>
-                </div> -->
-                <div class="page-wrapper">
-                  <div class="fill__section--title">
-                    <div class="title-icon">
-                      <i class="far fa-keyboard"></i>
-                      <h2 class="title-text">rellena</h2>
-                    </div>
-                    <i class="far fa-chevron-down"></i>
-                  </div>
+            <div class="page-wrapper">
+              <div class="collapsable__section--title js_collapsable">
+                <div class="title-icon">
+                  <i class="far fa-keyboard"></i>
+                  <h2 class="title-text">rellena</h2>
                 </div>
-
+                <i class="far fa-chevron-down"></i>
+              </div>
+            </div>
 
             <div class="page-wrapper">
                 <fieldset class="fill__section--form">
@@ -152,38 +144,88 @@
                     <input type="text" id="name" name="name" placeholder="Ej: Sally Jill">
                     <label for="position">Puesto</label>
                     <input type="text" id="position" name="position" placeholder="Ej: Front-end unicorn">
-                    <label for="photo">Imagen de perfil</label>
-                    <input type="file" id="photo" name="photo">
+
+                    <label for="img-selector">Imagen de perfil</label>
+                    <div class="action">
+                        <label class="action__upload-btn" for="img-selector">Añadir imagen</label>
+                        <input type="file" name="" id="img-selector" class="action__hiddenField js__profile-upload-btn">
+                        <div class="profile__preview js__profile-preview">
+                        </div>
+                    </div>
+
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="Ej: sally-hill@gmail.com">
                     <label for="phone">Teléfono</label>
                     <input type="tel" id="phone" name="phone" placeholder="Ej: 555-55-55-55">
-                    <label for="linkedin">Linkedin</label>
+                    <label for="linkedin">LinkedIn</label>
                     <input type="url" id="linkedin" name="linkedin" placeholder="Ej: linkedin.com/in/sally.hill">
-                    <label for="github">Github</label>
+                    <label for="github">GitHub</label>
                     <input type="text" id="github" name="github" placeholder="Ej: @sally-hill">
 
                 </fieldset>
             </div>
         </section>
-               
+        <section>
+          <div class="share">
+            <div class="page-wrapper">
+              <div class="collapsable__section--title js_collapsable">
+                <div class="title-icon">
+                  <i class="far icon1 fas fa-share-alt"></i>
+                  <h2 class="title-text">comparte</h2>
+                </div>
+                <i class="far fa-chevron-down"></i>
+              </div>
+            </div>
 
-    
-        <!-- comparte -->
-        <!-- <section>
-            <div>Crear tarjeta</div>
-            <h2>La tarjeta ha sido creada</h2>
-            <p>https://awesome-profile-card.com?id=A456DF0001</p>
-            <button><a href="">(icono twitter) Compartir en twitter</a></button>
-        </section> -->
+            <div class="page-wrapper">
+              <div class="share__section--create">
+                <button class="share__section--create__button">
+                  <i class="icon2 far fa-address-card"></i> &nbsp;Crear tarjeta
+                </button>
+              </div>
 
-    </main>
+              <div class="share__section--done">
+                <h2 class="share__section--done__text">La tarjeta ha sido creada:</h2>
+                <a class="share__section--done__link" href="#"
+                  >https://awesome-profile-card.com?id=A456DF0001
+                </a>
 
-    <footer>
+                <button class="share__section--done__button">
+                  <a
+                    class="share__section--done__button--link"
+                    href="#"
+                    target="_blank"
+                  >
+                    <i class="icon3 fab fa-twitter"></i> &nbsp; Compartir en twitter</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
 
-    </footer>
+      </section>
 
-    <script src="./assets/js/main.js"></script>
+    </div>
+
+
+  </main>
+
+  <footer class="footer__container position ">
+    <small class="copy"> awesome profile-cards &copy; 2021 </small>
+
+    <div class="logo">
+      <a href="https://adalab.es/" title="Visit Adalab"
+        ><img
+          src="./assets/images/logo-adalab.png"
+          alt="logo-adalab"
+          class="logo__image"
+      /></a>
+    </div>
+  </footer>
+
+
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
