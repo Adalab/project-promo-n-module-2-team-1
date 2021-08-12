@@ -6,7 +6,10 @@
     margin-left: 39px;
 
     @include tablet {
-      margin-left: 0;
+      margin-left: 40px;
+    }
+    @include desktop {
+      margin-left: 0px;
     }
   }
 
