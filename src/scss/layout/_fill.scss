@@ -27,28 +27,28 @@
       margin-bottom: 20px;
       display: flex;
       flex-direction: row;
-    }
 
-    .action__upload-btn {
-      background: $dull;
-      border-radius: 3px;
-      border: 0;
-      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
-      box-sizing: border-box;
-      color: $white;
-      font-family: $body-font;
-      font-size: 14px;
-      width: 140px;
-      height: 30px;
-      line-height: 20px;
-      cursor: pointer;
-      padding: 5px 20px;
-    }
+      &__upload-btn {
+        background: $dull;
+        border-radius: 3px;
+        border: 0;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+        box-sizing: border-box;
+        color: $white;
+        font-family: $body-font;
+        font-size: 14px;
+        width: 140px;
+        height: 30px;
+        line-height: 20px;
+        cursor: pointer;
+        padding: 5px 20px;
+      }
 
-    .action__hiddenField {
-      /* Ocultamos el input de tipo "file" porque no podemos 
+      &__hiddenField {
+        /* Ocultamos el input de tipo "file" porque no podemos 
       darle los estilos que queremos */
-      display: none;
+        display: none;
+      }
     }
 
     .profile__preview {
