@@ -1,26 +1,26 @@
 .header {
   display: flex;
   justify-content: center;
-
   margin-bottom: 35px;
+  margin: 30px auto 30px auto;
+
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    flex-grow: 6;
+    margin: 0;
+    align-items: flex-end;
+  }
 
   &__image--index {
     width: 250px;
     margin-left: auto;
     margin-right: auto;
+
     @include tablet {
-      width: 201px;
+      width: 419px;
     }
   }
+ 
 }
 
-header {
-  margin: 30px auto 30px auto;
-}
-
-.header__profile-cards {
-  @include tablet {
-    justify-content: left;
-    padding-left: 40px;
-  }
-}
