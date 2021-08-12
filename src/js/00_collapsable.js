@@ -3,12 +3,21 @@
 
 const collapsableButton = document.querySelector('.js_collapsable');
 
-const collapsableCard = document.querySelector('.js_collapsable_design');
+const collapsableCardDesign = document.querySelector('.js_collapsable_design');
 
-function handleCollapsableClick () {
-  collapsableCard.classList.toggle('hidden');
+const collapsableArrow = document.querySelector('.js_arrow');
+
+// const collapsableCardFill = document.querySelector('.js_collapsable_fill');
+
+// const collapsableCardShare = document.querySelector('.js_collapsable_share');
+
+
+function handleCollapsableClickDesign () {
+  collapsableCardDesign.classList.toggle('hidden');
+
+  collapsableArrow.classList.toggle('fa-chevron-up');
+
 }
 
+collapsableButton.addEventListener('click',handleCollapsableClickDesign);
 
-
-collapsableButton.addEventListener('click',handleCollapsableClick);
