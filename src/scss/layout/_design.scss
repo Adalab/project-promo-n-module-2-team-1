@@ -4,6 +4,13 @@
     justify-content: space-between;
     margin-top: 22px;
     margin-left: 39px;
+
+    @include tablet {
+      margin-left: 40px;
+    }
+    @include desktop {
+      margin-left: 0px;
+    }
   }
 
   &__title {
