@@ -2,12 +2,17 @@
 
 // * collapsable titulos profile cards
 
+// ! Move arrow 
+const collapsableArrow = document.querySelector('.js_arrow');
+
+
 // ! section design
 const collapsableButtonDesign = document.querySelector('.js_collapsable_design_button');
 const collapsableCardDesign = document.querySelector('.js_collapsable_design');
 
 function handleCollapsableDesign () {
   collapsableCardDesign.classList.toggle('hidden');
+  collapsableArrow.classList.toggle('fa-chevron-up');
   collapsableCardFill.classList.add('hidden');
   collapsableCardShare.classList.add('hidden');
 
@@ -39,15 +44,4 @@ function handleCollapsableShare () {
 
 collapsableButtonShare.addEventListener('click',handleCollapsableShare);
 
-// const collapsableButton = document.querySelector('.js_collapsable');
 
-// const collapsableCard = document.querySelector('.js_collapsable_design');
-
-// function handleCollapsableClick () {
-//   collapsableCard.classList.toggle('hidden');
-  
-// }
-
-
-
-// collapsableButton.addEventListener('click',handleCollapsableClick);

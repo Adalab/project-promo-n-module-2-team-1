@@ -17,7 +17,7 @@
     margin-left: auto;
     margin-right: auto;
 
-    @include tablet {
+    @include desktop {
       width: 419px;
     }
   }
@@ -27,9 +27,11 @@
   justify-content: center;
   margin-bottom: 35px;
   margin: 30px auto 30px auto;
+
   @include tablet {
     justify-content: left;
   }
+
   .header__image--index {
     @include tablet {
       width: 201px;
