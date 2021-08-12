@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="./assets/css/main.css" />
+  
 </head>
 
 <body>
@@ -43,11 +44,7 @@
                 <h3 class="preview__card--job">Front-end developer</h3>
               </div>
             </div>
-            <img
-              src="./assets/images/img_girl.jpg"
-              alt="Foto de la tarjeta"
-              class="preview__photo"
-            />
+            <div class="js__profile-image preview__photo" style="background-image:url(./assets/images/img_girl.jpg)"></div>
             <ul class="preview__rrss">
               <li class="preview__rrss--phone preview__rrss--item">
                 <a href="" class="preview__rrss--link">
@@ -126,7 +123,7 @@
             </div>
           </div>
         </fieldset>
-        <section class="fill">
+        <fieldset class="fill">
 
             <div class="page-wrapper">
               <div class="collapsable__section--title js_collapsable">
@@ -139,9 +136,10 @@
             </div>
 
             <div class="page-wrapper">
-                <fieldset class="fill__section--form">
+                <section class="fill__section--form">
                     <label for="name">Nombre completo</label>
                     <input type="text" id="name" name="name" placeholder="Ej: Sally Jill">
+
                     <label for="position">Puesto</label>
                     <input type="text" id="position" name="position" placeholder="Ej: Front-end unicorn">
 
@@ -155,16 +153,19 @@
 
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="Ej: sally-hill@gmail.com">
+
                     <label for="phone">Teléfono</label>
                     <input type="tel" id="phone" name="phone" placeholder="Ej: 555-55-55-55">
+
                     <label for="linkedin">LinkedIn</label>
                     <input type="url" id="linkedin" name="linkedin" placeholder="Ej: linkedin.com/in/sally.hill">
+
                     <label for="github">GitHub</label>
                     <input type="text" id="github" name="github" placeholder="Ej: @sally-hill">
 
-                </fieldset>
+                </section>
             </div>
-        </section>
+        </fieldset>
         <section>
           <div class="share">
             <div class="page-wrapper">
