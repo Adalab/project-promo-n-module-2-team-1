@@ -15,11 +15,11 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="./assets/css/main.css" />
-  
+  <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png"/>
 </head>
 
 <body>
-  <header class="header__profile-cards header">
+  <header class="header__profile-cards">
 
       <a href="index.html"><img src="./assets/images/logo-awesome-profile-cards.svg" alt="logo de awesome profile-cards"
               class="header__image--index" /></a>
@@ -69,13 +69,13 @@
             </ul>
           </div>
         </div>
-      </section>
 
+      </section>
 
       <section class="section-options-responsive">
         <fieldset class="design">
           <div class="page-wrapper">
-            <div class="collapsable__section--title-1 js_collapsable">
+            <div class="collapsable__section--title-1 js_collapsable_design_button">
               <div class="title-icon">
                 <i class="far fa-object-ungroup"></i>
                 <h2 class="title-text">Diseña</h2>
@@ -83,6 +83,7 @@
               <i class="far fa-chevron-down"></i>
             </div>
           </div>
+
 
           <div class="page-wrapper design__container js_collapsable_design">
             <legend class="design__title">Colores</legend>
@@ -126,7 +127,7 @@
         <fieldset class="fill">
 
             <div class="page-wrapper">
-              <div class="collapsable__section--title js_collapsable">
+              <div class="collapsable__section--title js_collapsable_fill_button">
                 <div class="title-icon">
                   <i class="far fa-keyboard"></i>
                   <h2 class="title-text">rellena</h2>
@@ -135,7 +136,8 @@
               </div>
             </div>
 
-            <div class="page-wrapper">
+
+            <div class="page-wrapper js_collapsable_fill hidden">
                 <section class="fill__section--form">
                     <label for="name">Nombre completo</label>
                     <input type="text" id="name" name="name" placeholder="Ej: Sally Jill">
@@ -169,7 +171,7 @@
         <section>
           <div class="share">
             <div class="page-wrapper">
-              <div class="collapsable__section--title js_collapsable">
+              <div class="collapsable__section--title js_collapsable_share_button">
                 <div class="title-icon">
                   <i class="far icon1 fas fa-share-alt"></i>
                   <h2 class="title-text">comparte</h2>
@@ -178,12 +180,13 @@
               </div>
             </div>
 
+
             <div class="page-wrapper">
-              <div class="share__section--create">
+              <div class="share__section--create js_collapsable_share hidden">
                 <button class="share__section--create__button">
                   <i class="icon2 far fa-address-card"></i> &nbsp;Crear tarjeta
                 </button>
-              </div>
+
 
               <div class="share__section--done">
                 <h2 class="share__section--done__text">La tarjeta ha sido creada:</h2>
@@ -202,6 +205,7 @@
                 </button>
               </div>
             </div>
+          </div>
           </div>
         </section>
 
