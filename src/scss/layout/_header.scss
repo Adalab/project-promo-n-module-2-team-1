@@ -7,9 +7,9 @@
   @include tablet {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
     flex-grow: 6;
     margin: 0;
+    align-items: flex-end;
   }
 
   &__image--index {
