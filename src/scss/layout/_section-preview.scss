@@ -76,6 +76,9 @@
     width: 240px;
     height: 200px;
     object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   &__rrss {
