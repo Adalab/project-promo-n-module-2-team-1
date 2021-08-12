@@ -14,3 +14,11 @@
 header {
   margin: 30px auto 30px auto;
 }
+
+.header__profile-cards {
+  @include tablet {
+    width: 201px;
+    justify-content: flex-start;
+    padding-left: 40px;
+  }
+}
