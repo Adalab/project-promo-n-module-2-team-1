@@ -5,9 +5,9 @@ const formName = document.querySelector('.js_name');
 const formPreviewName = document.querySelector('.js_preview_name');
 
 function handleName(){
-formPreviewName.innerHTML = formName.value;
+  formPreviewName.innerHTML = formName.value;
 }
 
-formName.addEventListener("keyup", handleName);
+formName.addEventListener('keyup', handleName);
 
 
