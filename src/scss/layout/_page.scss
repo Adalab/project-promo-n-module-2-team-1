@@ -1,7 +1,7 @@
 body {
   font-family: $body-font;
-  color: $primary-color-alt;
-  font-size: 13px;
+  color      : $primary-color-alt;
+  font-size  : 13px;
 }
 
 .page-wrapper {
@@ -12,7 +12,7 @@ body {
   }
 
   @include desktop {
-    margin: 0 auto;
+    margin   : 0 auto;
     max-width: 1120px;
   }
 }

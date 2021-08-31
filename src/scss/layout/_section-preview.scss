@@ -1,18 +1,18 @@
 .preview {
-  display: flex;
+  display        : flex;
   justify-content: center;
-  background: linear-gradient(#bfcdd0, #dde9ed);
-  height: 457px;
+  background     : linear-gradient(#bfcdd0, #dde9ed);
+  height         : 457px;
 
   @include tablet {
-    height: auto;
+    height       : auto;
     border-radius: 6px;
-    margin: 23px 30px 21px 30px;
+    margin       : 23px 30px 21px 30px;
   }
 
   &-container {
-    display: flex;
-    flex-direction: column;
+    display        : flex;
+    flex-direction : column;
     justify-content: center;
 
     @include tablet {
@@ -21,84 +21,84 @@
   }
 
   &__button {
-    display: flex;
+    display        : flex;
     justify-content: space-evenly;
-    align-items: center;
-    width: 75px;
-    height: 30px;
-    margin-bottom: 20px;
-    font-family: $body-font;
-    font-size: 12px;
-    text-transform: uppercase;
-    color: $primary-color;
-    border: 1px solid $white;
-    border-radius: 15px;
+    align-items    : center;
+    width          : 75px;
+    height         : 30px;
+    margin-bottom  : 20px;
+    font-family    : $body-font;
+    font-size      : 12px;
+    text-transform : uppercase;
+    color          : $primary-color;
+    border         : 1px solid $white;
+    border-radius  : 15px;
   }
 
   &__card {
-    width: 240px;
-    height: 329px;
+    width           : 240px;
+    height          : 329px;
     background-color: $white;
-    box-shadow: 0 1px 10px 0 lighten($black, 55%),
+    box-shadow      : 0 1px 10px 0 lighten($black, 55%),
       0 1px 3px 0 rgba(0, 0, 0, 0.35);
 
     &--description {
-      display: flex;
+      display        : flex;
       justify-content: flex-start;
-      align-items: center;
-      height: 75px;
+      align-items    : center;
+      height         : 75px;
     }
 
     &--bullet {
-      width: 5px;
-      height: 42px;
-      margin-right: 15px;
+      width           : 5px;
+      height          : 42px;
+      margin-right    : 15px;
       background-color: $dirty-blue;
     }
 
     &--title {
-      display: flex;
-      flex-direction: column;
+      display        : flex;
+      flex-direction : column;
       justify-content: space-between;
-      height: 42px;
-      font-family: $title-font;
-      color: $primary-color-alt;
+      height         : 42px;
+      font-family    : $title-font;
+      color          : $primary-color-alt;
     }
 
     &--name {
-      font-size: 18px;
+      font-size  : 18px;
       font-weight: 800;
     }
 
     &--job {
-      font-size: 16px;
+      font-size  : 16px;
       font-weight: 500;
     }
   }
 
   &__photo {
-    width: 240px;
-    height: 200px;
-    object-fit: cover;
+    width              : 240px;
+    height             : 200px;
+    object-fit         : cover;
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat  : no-repeat;
+    background-size    : cover;
   }
 
   &__rrss {
-    display: flex;
-    margin-top: 10px;
+    display    : flex;
+    margin-top : 10px;
     margin-left: 20px;
 
     &--item {
-      display: flex;
+      display        : flex;
       justify-content: center;
-      align-items: center;
-      width: 32px;
-      height: 32px;
-      margin-right: 10px;
-      border-radius: 16px;
-      border: 2px solid $border-form;
+      align-items    : center;
+      width          : 32px;
+      height         : 32px;
+      margin-right   : 10px;
+      border-radius  : 16px;
+      border         : 2px solid $border-form;
     }
 
     &--link {

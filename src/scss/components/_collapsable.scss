@@ -1,9 +1,9 @@
 .collapsable__section--title-1 {
-  display: flex;
-  flex-direction: row;
+  display        : flex;
+  flex-direction : row;
   justify-content: space-between;
-  align-items: center;
-  padding-top: 27px;
+  align-items    : center;
+  padding-top    : 27px;
 
   .fal,
   .far {
@@ -11,9 +11,9 @@
   }
 
   .title-icon {
-    display: flex;
+    display       : flex;
     flex-direction: row;
-    align-items: center;
+    align-items   : center;
 
     .fa-keyboard,
     .fa-object-ungroup {
@@ -22,10 +22,10 @@
 
     .title-text {
       text-transform: uppercase;
-      font-family: $body-font;
-      font-size: 18px;
-      color: $gun-metal;
-      margin-left: 10px;
+      font-family   : $body-font;
+      font-size     : 18px;
+      color         : $gun-metal;
+      margin-left   : 10px;
     }
   }
 
@@ -33,13 +33,14 @@
     color: $gun-metal;
   }
 }
+
 .collapsable__section--title {
-  display: flex;
-  flex-direction: row;
+  display        : flex;
+  flex-direction : row;
   justify-content: space-between;
-  align-items: center;
-  border-top: solid 1px #d8d8d8;
-  padding-top: 10px;
+  align-items    : center;
+  border-top     : solid 1px #d8d8d8;
+  padding-top    : 10px;
 
   .fal,
   .far {
@@ -47,9 +48,9 @@
   }
 
   .title-icon {
-    display: flex;
+    display       : flex;
     flex-direction: row;
-    align-items: center;
+    align-items   : center;
 
     .fa-keyboard,
     .fa-object-ungroup {
@@ -58,10 +59,10 @@
 
     .title-text {
       text-transform: uppercase;
-      font-family: $body-font;
-      font-size: 18px;
-      color: $gun-metal;
-      margin-left: 10px;
+      font-family   : $body-font;
+      font-size     : 18px;
+      color         : $gun-metal;
+      margin-left   : 10px;
     }
   }
 
