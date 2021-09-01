@@ -11,6 +11,8 @@ formPreviewName.innerHTML = formName.value;
 formName.addEventListener("keyup", handleName);
 
 
+
+
 //RRSS
 
 //inputs form
