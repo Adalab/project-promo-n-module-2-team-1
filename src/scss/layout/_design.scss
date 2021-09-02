@@ -1,53 +1,54 @@
 .design {
   &__container {
-    display: flex;
+    display        : flex;
     justify-content: space-between;
-    margin-top: 22px;
-    margin-left: 39px;
+    margin-top     : 22px;
+    margin-left    : 39px;
 
     @include tablet {
       margin-left: 40px;
     }
+
     @include desktop {
       margin-left: 0px;
     }
   }
 
   &__title {
-    font-size: 14px;
-    font-weight: normal;
+    font-size     : 14px;
+    font-weight   : normal;
     text-transform: uppercase;
-    color: $primary-color;
-    font-family: $body-font;
+    color         : $primary-color;
+    font-family   : $body-font;
   }
 
   &__palette {
-    display: grid;
+    display              : grid;
     grid-template-columns: 17px 10px 90px;
-    grid-template-rows: 25px 20px;
+    grid-template-rows   : 25px 20px;
   }
 
   &__wrapper-palette {
-    display: flex;
+    display    : flex;
     grid-column: 3;
   }
 
   &__palette--input {
-    display: flex;
-    flex-direction: column;
+    display        : flex;
+    flex-direction : column;
     justify-content: center;
   }
 
   &__input {
     -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: 50%;
-    width: 17px;
-    height: 17px;
-    margin: 0;
-    border: 1px solid $pinkish-grey;
-    transition: 0.2s all linear;
+    -moz-appearance   : none;
+    appearance        : none;
+    border-radius     : 50%;
+    width             : 17px;
+    height            : 17px;
+    margin            : 0;
+    border            : 1px solid $pinkish-grey;
+    transition        : 0.2s all linear;
 
     &:checked {
       border: 6px solid #3db0f7;
