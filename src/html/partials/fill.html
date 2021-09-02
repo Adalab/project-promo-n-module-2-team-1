@@ -1,77 +1,34 @@
 <fieldset class="fill">
-  <include
-    src="./collapsable.html"
-    icon="fa-keyboard"
-    title="rellena"
-    class="collapsable__section--title"
-    js="js_collapsable_fill_button"
-    arrow="js_arrow_fill"
-  ></include>
+  <include src="./collapsable.html" icon="fa-keyboard" title="rellena" class="collapsable__section--title"
+    js="js_collapsable_fill_button" arrow="js_arrow_fill"></include>
 
   <div class="page-wrapper js_collapsable_fill hidden">
     <section class="fill__section--form">
       <label for="name">Nombre completo</label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        placeholder="Ej: Sally Jill"
-        class="name js_name"
-      />
+      <input type="text" id="name" name="name" placeholder="Ej: Sally Jill" class="name js_name" />
 
       <label for="position">Puesto</label>
-      <input
-        type="text"
-        id="position"
-        name="position"
-        placeholder="Ej: Front-end unicorn"
-      />
+      <input type="text" id="position" name="position" placeholder="Ej: Front-end unicorn" />
 
       <label for="img-selector">Imagen de perfil</label>
       <div class="action">
-        <label class="action__upload-btn" for="img-selector"
-          >Añadir imagen</label
-        >
-        <input
-          type="file"
-          name=""
-          id="img-selector"
-          class="action__hiddenField js__profile-upload-btn"
-        />
+        <label class="action__upload-btn" for="img-selector">Añadir imagen</label>
+        <input type="file" name="" id="img-selector" class="action__hiddenField js__profile-upload-btn" />
         <div class="profile__preview js__profile-preview"></div>
       </div>
 
       <label for="email">Email</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Ej: sally-hill@gmail.com"
-      />
+      <input type="email" id="email" name="email" placeholder="Ej: sally-hill@gmail.com" class="js_email" />
 
       <label for="phone">Teléfono</label>
-      <input
-        type="tel"
-        id="phone"
-        name="phone"
-        placeholder="Ej: 555-55-55-55"
-      />
+      <input type="tel" id="phone" name="phone" placeholder="Ej: 555-55-55-55" class="js_phone" />
 
       <label for="linkedin">LinkedIn</label>
-      <input
-        type="url"
-        id="linkedin"
-        name="linkedin"
-        placeholder="Ej: linkedin.com/in/sally.hill"
-      />
+      <input type="url" id="linkedin" name="linkedin" placeholder="Ej: linkedin.com/in/sally.hill"
+        class="js_linkedin" />
 
       <label for="github">GitHub</label>
-      <input
-        type="text"
-        id="github"
-        name="github"
-        placeholder="Ej: @sally-hill"
-      />
+      <input type="text" id="github" name="github" placeholder="Ej: @sally-hill" class="js_github" />
     </section>
   </div>
 </fieldset>
