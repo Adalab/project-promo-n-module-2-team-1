@@ -30,15 +30,15 @@ const formEl = document.querySelector('.js_form');
 
 // * creamos la funcion del escuchador para escribir en la previsualización el valor de cada uno de los inputs del objeto
 function handledFormElUpdate(event) {
-  // nos devuelve el ID del input
-  const inputId = event.target.id;
+  // nos devuelve el name del input
+  const inputName = event.target.name;
   
   //nos devuelve el valor del input
   const inputValue = event.target.value;
   
   //asigna al ID de cada objeto un valor,
   //el ID del objeto y el ID del formulario tienen que coincidir
-  formObject[inputId] = inputValue;
+  formObject[inputName] = inputValue;
 
   //escribe en cada elemento html de la card el valor del input del objeto
 
