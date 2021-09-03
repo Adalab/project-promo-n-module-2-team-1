@@ -47,7 +47,7 @@ function handledFormElUpdate(event) {
   formPreviewJob.innerHTML = formObject.job;
   
   //inputs agregar href 
-  previewEmail.href = `${formObject.email}`;
+  previewEmail.href = `mailto:${formObject.email}`;
   previewPhone.href = `+34${formObject.phone}`;
   previewLinkedin.href = `https://linkedin.com/in/${formObject.linkedin}`;
   previewGithub.href = `https://github.com/${formObject.github}`;
