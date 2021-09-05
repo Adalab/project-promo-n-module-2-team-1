@@ -2,9 +2,9 @@
 'use strict';
 
 // * preview card: escribimos las constantes, solo del preview (card)
-const palletteOne = document.querySelector('.js_');
-const palletteTwo = document.querySelector('.js_');
-const palleteThree = document.querySelector('.js_');
+const paletteOne = document.querySelector('.js_palette_one');
+const paletteTwo = document.querySelector('.js_palette_two');
+const paleteThree = document.querySelector('.js_palette_three');
 const formPreviewName = document.querySelector('.js_preview_name');
 const formPreviewJob = document.querySelector('.js_preview_job');
 const previewLinkedin = document.querySelector('.js_preview_linkedin');
