@@ -32,7 +32,7 @@ const formEl = document.querySelector('.js_form');
 function handledFormElUpdate(event) {
   // nos devuelve el name del input
   const inputName = event.target.name;
-  
+
   //nos devuelve el valor del input
   const inputValue = event.target.value;
 
@@ -45,7 +45,7 @@ function handledFormElUpdate(event) {
   //inputs innerHTML
   formPreviewName.innerHTML = formObject.name;
   formPreviewJob.innerHTML = formObject.job;
-  
+
   //inputs agregar href 
   previewEmail.href = `mailto:${formObject.email}`;
   previewPhone.href = `+34${formObject.phone}`;
