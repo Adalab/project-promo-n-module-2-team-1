@@ -15,8 +15,8 @@ const previewGithub = document.querySelector('.js_preview_github');
 // * hacemos el objeto que comprende todo el formulario: diseña y rellena
 const formObject = {
   palette: "",
-  name: "",
-  job: "",
+  name: "Nombre Apellido",
+  job: "Front-end developer",
   phone: "",
   email: "",
   linkedin: "",
@@ -52,29 +52,10 @@ function handledFormElUpdate(event) {
   previewLinkedin.href = `https://linkedin.com/in/${formObject.linkedin}`;
   previewGithub.href = `https://github.com/${formObject.github}`;
 
-  // inputs radio
-  // Condicional que evalua si el value al que se le ha hecho click tiene el valor "palette-number", para asi adicionar la clase que corresponde y cambiar colores de tarjeta 
-  if (formObject.palette === 'palette-one') {
-    paletteOne.classList.add(`palette-one`)
-    paletteOne.classList.remove(`palette-two`)
-    paletteOne.classList.remove(`palette-three`)
-    
-  } else if (formObject.palette === 'palette-two'){
-    paletteTwo.classList.add(`palette-two`)
-    paletteTwo.classList.remove(`palette-one`)
-    paletteTwo.classList.remove(`palette-three`)
-    
-  } else {
-    paletteThree.classList.add(`palette-three`)
-    paletteThree.classList.remove(`palette-one`)
-    paletteThree.classList.remove(`palette-two`)
-    
-  } 
-
 }
 
 // * el evento (escuchador) sobre el formulario completo
-formEl.addEventListener('change', handledFormElUpdate);
+formEl.addEventListener('keyup', handledFormElUpdate);
 
 // ! importante saber cual es el target y el currentTarget de la función, en este caso el target=cada elemento del formulario que tiene el foco puesto y el currentTarget=el formulario entero
 
