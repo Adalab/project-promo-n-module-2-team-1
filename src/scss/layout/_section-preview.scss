@@ -34,7 +34,13 @@
     color          : $primary-color;
     border         : 1px solid $white;
     border-radius  : 15px;
-  }
+    
+    &:hover {
+      background-color: white;
+      cursor:pointer;
+
+	}
+}
 
   &__card {
     width           : 240px;
