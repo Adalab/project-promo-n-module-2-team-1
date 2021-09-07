@@ -14,6 +14,7 @@ const previewGithub = document.querySelector('.js_preview_github');
 
 // * hacemos el objeto que comprende todo el formulario: diseña y rellena
 const formObject = {
+  // eslint-disable-next-line quotes
   palette: "",
   name: "",
   job: "",
