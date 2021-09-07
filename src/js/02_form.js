@@ -4,7 +4,7 @@
 // * preview card: escribimos las constantes, solo del preview (card)
 const paletteOne = document.querySelector('.js_palette_one');
 const paletteTwo = document.querySelector('.js_palette_two');
-const paleteThree = document.querySelector('.js_palette_three');
+const paletteThree = document.querySelector('.js_palette_three');
 /*const allPaletteInput = document.querySelectorAll('.js_palette');*/
 const formPreviewName = document.querySelector('.js_preview_name');
 const formPreviewJob = document.querySelector('.js_preview_job');
@@ -14,8 +14,8 @@ const previewEmail = document.querySelector('.js_preview_email');
 const previewGithub = document.querySelector('.js_preview_github');
 const nameChangeColor = document.querySelector('.js_preview_name');
 const bulletChangeColor = document.querySelector('.js_bullet');
-const iconChangeColor = document.querySelector('.js_icon');
-const itemChangeColor = document.querySelector('.js_item');
+const iconChangeColor = document.querySelectorAll('.js_icon');
+const itemChangeColor = document.querySelectorAll('.js_item');
 
 // * hacemos el objeto que comprende todo el formulario: diseña y rellena
 const formObject = {
@@ -34,49 +34,61 @@ const formObject = {
 const formEl = document.querySelector('.js_form');
 
 function handleInput(value) {
-
-  switch(value.toString()) {
+  console.log(value);
+  switch(value) {
   case 'palette-one':
     nameChangeColor.classList.add('palette_1_text_color'); 
-    bulletChangeColor.classList.add('palette_1_bullet_color'); 
-    iconChangeColor.classList.add('palette_1_icons_color'); 
-    itemChangeColor.classList.add('palette_1_item_color');
+    bulletChangeColor.classList.add('palette_1_bullet_color');
+    for (const item of iconChangeColor){
+      item.classList.add('palette_1_icons_color');
+      item.classList.remove('palette_2_icons_color');
+      item.classList.remove('palette_3_icons_color');
+    }
+    for (const item of itemChangeColor){
+      item.classList.add('palette_1_item_color');
+      item.classList.remove('palette_2_item_color');
+      item.classList.remove('palette_3_item_color');
+    }
     bulletChangeColor.classList.remove('palette_2_bullet_color');  
     nameChangeColor.classList.remove('palette_2_text_color');
-    iconChangeColor.classList.remove('palette_2_icons_color');
-    itemChangeColor.classList.remove('palette_2_item_color');
     nameChangeColor.classList.remove('palette_3_text_color');
-    iconChangeColor.classList.remove('palette_3_icons_color');
     bulletChangeColor.classList.remove('palette_3_bullet_color'); 
-    itemChangeColor.classList.remove('palette_3_item_color'); 
     break;
   case 'palette-two':
     bulletChangeColor.classList.add('palette_2_bullet_color');
     nameChangeColor.classList.add('palette_2_text_color');
-    iconChangeColor.classList.add('palette_2_icons_color');
-    itemChangeColor.classList.add('palette_2_item_color');  
+    for (const item of iconChangeColor){
+      item.classList.add('palette_2_icons_color');
+      item.classList.remove('palette_1_icons_color');
+      item.classList.remove('palette_3_icons_color');
+    }
+    for (const item of itemChangeColor){
+      item.classList.add('palette_2_item_color');
+      item.classList.remove('palette_1_item_color');
+      item.classList.remove('palette_3_item_color');
+    }
     bulletChangeColor.classList.remove('palette_3_bullet_color'); 
     nameChangeColor.classList.remove('palette_3_text_color');
-    iconChangeColor.classList.remove('palette_3_icons_color');
-    itemChangeColor.classList.remove('palette_3_item_color'); 
     nameChangeColor.classList.remove('palette_1_text_color'); 
     bulletChangeColor.classList.remove('palette_1_bullet_color'); 
-    iconChangeColor.classList.remove('palette_1_icons_color'); 
-    itemChangeColor.classList.remove('palette_1_item_color'); 
     break;
   case 'palette-three':
     bulletChangeColor.classList.add('palette_3_bullet_color');
     nameChangeColor.classList.add('palette_3_text_color');
-    iconChangeColor.classList.add('palette_3_icons_color');
-    itemChangeColor.classList.add('palette_3_item_color'); 
+    for (const item of iconChangeColor){
+      item.classList.add('palette_3_icons_color');
+      item.classList.remove('palette_2_icons_color');
+      item.classList.remove('palette_1_icons_color');
+    }
+    for (const item of itemChangeColor){
+      item.classList.add('palette_3_item_color');
+      item.classList.remove('palette_2_item_color');
+      item.classList.remove('palette_1_item_color');
+    }
     bulletChangeColor.classList.remove('palette_2_bullet_color'); 
     nameChangeColor.classList.remove('palette_2_text_color');
-    iconChangeColor.classList.remove('palette_2_icons_color');
-    itemChangeColor.classList.remove('palette_2_item_color'); 
     nameChangeColor.classList.remove('palette_1_text_color'); 
     bulletChangeColor.classList.remove('palette_1_bullet_color'); 
-    iconChangeColor.classList.remove('palette_1_icons_color'); 
-    itemChangeColor.classList.remove('palette_1_item_color'); 
     break;
   }
 }

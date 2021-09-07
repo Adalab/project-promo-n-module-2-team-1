@@ -112,7 +112,21 @@
     }
   }
 }
+
+.palette1 {
+  h2{
+    color: $dark-green-blue;
+  }
+    .card_bullet{background-color: $dirty-blue;
+    }
+  li {border:  2px solid $hospital-green; 
+      i {color: $dirty-blue;
+
+      }
+    }
+}
 //palette-one
+
 .palette_1_text_color {
   color:$dark-green-blue;
 }
@@ -126,6 +140,7 @@
   border:  2px solid $hospital-green;
 }
 //palette-two
+
 .palette_2_bullet_color {
   background-color: $rusty-red;
 }
