@@ -1,10 +1,10 @@
-//formulario rellena profile cards
 'use strict';
+//formulario rellena profile cards
 
 // * preview card: escribimos las constantes, solo del preview (card)
-const palletteOne = document.querySelector('.js_');
-const palletteTwo = document.querySelector('.js_');
-const palleteThree = document.querySelector('.js_');
+const paletteOne = document.querySelector('.js_palette_1');
+const paletteTwo = document.querySelector('.js_palette_2');
+const paletteThree = document.querySelector('.js_palette_3');
 const formPreviewName = document.querySelector('.js_preview_name');
 const formPreviewJob = document.querySelector('.js_preview_job');
 const previewLinkedin = document.querySelector('.js_preview_linkedin');
@@ -16,8 +16,8 @@ const previewGithub = document.querySelector('.js_preview_github');
 const formObject = {
   // eslint-disable-next-line quotes
   palette: "",
-  name: "",
-  job: "",
+  name: "Nombre Apellido",
+  job: "Front-end developer",
   phone: "",
   email: "",
   linkedin: "",
@@ -52,10 +52,11 @@ function handledFormElUpdate(event) {
   previewPhone.href = `+34${formObject.phone}`;
   previewLinkedin.href = `https://linkedin.com/in/${formObject.linkedin}`;
   previewGithub.href = `https://github.com/${formObject.github}`;
+
 }
 
 // * el evento (escuchador) sobre el formulario completo
-formEl.addEventListener('change', handledFormElUpdate);
+formEl.addEventListener('keyup', handledFormElUpdate);
 
 // ! importante saber cual es el target y el currentTarget de la función, en este caso el target=cada elemento del formulario que tiene el foco puesto y el currentTarget=el formulario entero
 
