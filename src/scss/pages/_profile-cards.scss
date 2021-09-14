@@ -25,6 +25,11 @@
   }
 }
 
-.hidden {
-  display: none;
+
+.hidden .hidden-content {
+  display: none
+}
+
+.hidden .hidden__icon {
+  transform: rotate(180deg)
 }

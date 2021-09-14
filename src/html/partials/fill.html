@@ -1,9 +1,11 @@
-<fieldset class="fill">
-  <include src="./collapsable.html" icon="fa-keyboard" title="rellena" class="collapsable__section--title"
-    js="js_collapsable_fill_button" arrow="js_arrow_fill"></include>
+<fieldset class="fill js-hidden hidden">
 
-  <div class="page-wrapper js_collapsable_fill hidden">
-    <section class="fill__section--form">
+  <include src="./collapsable.html" icon="fa-keyboard" title="rellena"
+    class="js-collapsible collapsable__section--title" id="fill" arrow="fa-chevron-up  hidden__icon">
+  </include>
+
+  <div class="page-wrapper">
+    <section class="fill__section--form hidden-content">
       <label for="name">Nombre completo</label>
       <input type="text" id="name" name="name" placeholder="Ej: Sally Jill" class="name js_name" />
 
@@ -31,4 +33,5 @@
       <input type="text" id="github" name="github" placeholder="User Ej: sally-hill" class="js_github" />
     </section>
   </div>
+
 </fieldset>
