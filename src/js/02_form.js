@@ -13,7 +13,9 @@ const nameChangeColor = document.querySelector(".js_preview_name");
 const bulletChangeColor = document.querySelector(".js_bullet");
 const iconChangeColor = document.querySelectorAll(".js_icon");
 const itemChangeColor = document.querySelectorAll(".js_item");
+profileImage;
 
+let valueImg = profileImage;
 // * hacemos el objeto que comprende todo el formulario: diseña y rellena
 const formObject = {
   palette: "",
@@ -31,7 +33,7 @@ const formEl = document.querySelector(".js_form");
 
 function handleInput(value) {
   switch (value) {
-    case "palette-one":
+    case "1":
       nameChangeColor.classList.add("palette_1_text_color");
       bulletChangeColor.classList.add("palette_1_bullet_color");
       for (const item of iconChangeColor) {
@@ -49,7 +51,7 @@ function handleInput(value) {
       nameChangeColor.classList.remove("palette_3_text_color");
       bulletChangeColor.classList.remove("palette_3_bullet_color");
       break;
-    case "palette-two":
+    case "2":
       bulletChangeColor.classList.add("palette_2_bullet_color");
       nameChangeColor.classList.add("palette_2_text_color");
       for (const item of iconChangeColor) {
@@ -67,7 +69,7 @@ function handleInput(value) {
       nameChangeColor.classList.remove("palette_1_text_color");
       bulletChangeColor.classList.remove("palette_1_bullet_color");
       break;
-    case "palette-three":
+    case "3":
       bulletChangeColor.classList.add("palette_3_bullet_color");
       nameChangeColor.classList.add("palette_3_text_color");
       for (const item of iconChangeColor) {
@@ -87,7 +89,6 @@ function handleInput(value) {
       break;
   }
 }
-
 // * creamos la funcion del escuchador para escribir en la previsualización el valor de cada uno de los inputs del objeto
 function handledFormElUpdate(event) {
   // nos devuelve el name del input
@@ -110,12 +111,15 @@ function handledFormElUpdate(event) {
   //inputs innerHTML
   formPreviewName.innerHTML = formObject.name;
   formPreviewJob.innerHTML = formObject.job;
-
+  profileImage.value = formObject.photo;
   //inputs agregar href
   previewEmail.href = `mailto:${formObject.email}`;
   previewPhone.href = `+34${formObject.phone}`;
   previewLinkedin.href = `https://linkedin.com/in/${formObject.linkedin}`;
   previewGithub.href = `https://github.com/${formObject.github}`;
+  profileImage.style.backgroundImage = `url(${formObject.photo})`;
+
+  profilePreview.style.backgroundImage = `url(${formObject.photo})`;
 }
 
 // * el evento (escuchador) sobre el formulario completo
