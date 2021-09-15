@@ -1,15 +1,10 @@
-<fieldset class="design">
-  <include
-    src="./collapsable.html"
-    icon="fa-object-ungroup"
-    title="Diseña"
-    class="collapsable__section--title-1"
-    js="js_collapsable_design_button"
-    arrow="js_arrow_design"
-  >
+<fieldset class="design js-hidden">
+
+  <include src="./collapsable.html" icon="fa-object-ungroup" title="diseña"
+    class="js-collapsible collapsable__section--title-1" id="design" arrow="fa-chevron-up hidden__icon">
   </include>
 
-  <div class="page-wrapper design__container js_collapsable_design">
+  <div class="page-wrapper design__container selection hidden-content">
     <legend class="design__title">Colores</legend>
 
     <div class="design__wrapper--pallets">
@@ -65,4 +60,5 @@
       </div>
     </div>
   </div>
+
 </fieldset>

@@ -1,22 +1,16 @@
-<section>
-  <div class="share">
-    <include
-      src="./collapsable.html"
-      icon="icon1 fas fa-share-alt"
-      title="comparte"
-      class="collapsable__section--title"
-      js="js_collapsable_share_button"
-      arrow="js_arrow_share"
-    >
-    </include>
+<fieldset class="share js-hidden">
+
+  <include src="./collapsable.html" icon="icon1 fas fa-share-alt" title="comparte"
+    class="js-collapsible   collapsable__section--title" id="share" arrow="fa-chevron-up hidden__icon">
+  </include>
 
     <div class="page-wrapper">
-      <div class="share__section--create js_collapsable_share hidden">
+      <div class="share__section--create js_collapsable_share hidden-content">
         <button class="share__section--create__button js_share--btn">
           <i class="icon2 far fa-address-card"></i> &nbsp;Crear tarjeta
         </button>
 
-        <div class="share__section--done hidden js_card--done">
+        <div class="share__section--done js_card--done">
           <h2 class="share__section--done__text js_undone">
             La tarjeta ha sido creada:
           </h2>
@@ -35,7 +29,8 @@
             >
           </button>
         </div>
+
       </div>
     </div>
-  </div>
-</section>
+
+</fieldset>

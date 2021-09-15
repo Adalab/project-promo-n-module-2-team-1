@@ -1,5 +1,6 @@
 //formulario rellena carga de imagen profile cards
 
+"use strict";
 
 const fr = new FileReader();
 const fileField = document.querySelector(".js__profile-upload-btn");

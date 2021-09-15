@@ -116,7 +116,6 @@ function handledFormElUpdate(event) {
   previewLinkedin.href = `https://linkedin.com/in/${formObject.linkedin}`;
   previewGithub.href = `https://github.com/${formObject.github}`;
 
-
 }
 
 // * el evento (escuchador) sobre el formulario completo

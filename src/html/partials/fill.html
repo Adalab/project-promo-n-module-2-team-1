@@ -1,15 +1,11 @@
-<fieldset class="fill">
-  <include
-    src="./collapsable.html"
-    icon="fa-keyboard"
-    title="rellena"
-    class="collapsable__section--title"
-    js="js_collapsable_fill_button"
-    arrow="js_arrow_fill"
-  ></include>
+<fieldset class="fill js-hidden">
 
-  <div class="page-wrapper js_collapsable_fill hidden">
-    <section class="fill__section--form">
+  <include src="./collapsable.html" icon="fa-keyboard" title="rellena"
+    class="js-collapsible collapsable__section--title" id="fill" arrow="fa-chevron-up  hidden__icon">
+  </include>
+
+  <div class="page-wrapper">
+    <section class="fill__section--form hidden-content">
       <label for="name">Nombre completo</label>
       <input
         type="text"
@@ -27,7 +23,7 @@
         placeholder="Ej: Front-end unicorn"
       />
 
-      <label for="img-selector">Imagen de perfil</label>
+      <label name="img-selector">Imagen de perfil</label>
       <div class="action">
         <label class="action__upload-btn" for="img-selector"
           >Añadir imagen</label
