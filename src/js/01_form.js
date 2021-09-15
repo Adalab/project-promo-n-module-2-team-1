@@ -1,3 +1,8 @@
+/* eslint-disable indent */
+/* eslint-disable no-useless-escape */
+/* eslint-disable no-unused-vars */
+/* eslint-disable quotes */
+/* eslint-disable strict */
 //formulario rellena profile cards
 
 // * preview card: escribimos las constantes, solo del preview (card)

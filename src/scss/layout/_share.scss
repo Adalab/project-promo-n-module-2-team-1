@@ -21,6 +21,14 @@
     font-size: 18px;
     margin: 13px 18px 13px 17px;
     text-transform: uppercase;
+
+    &:hover{
+      background-color:$white ;
+      color: $dull;
+      border: $dull solid 2px;
+      cursor: pointer;
+      
+    }
   }
 }
 
