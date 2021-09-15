@@ -1,5 +1,4 @@
 //formulario rellena profile cards
-"use strict";
 
 // * preview card: escribimos las constantes, solo del preview (card)
 
@@ -118,11 +117,6 @@ function handledFormElUpdate(event) {
   previewGithub.href = `https://github.com/${formObject.github}`;
 
 
-  
-
-  // profileImage.style.backgroundImage = `url(${formObject.photo})`;
-
-  // profilePreview.style.backgroundImage = `url(${formObject.photo})`;
 }
 
 // * el evento (escuchador) sobre el formulario completo
