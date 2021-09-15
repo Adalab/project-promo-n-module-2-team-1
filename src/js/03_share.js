@@ -8,47 +8,6 @@ const undoneTwitter = document.querySelector(".js_undone2");
 function handleShareBtn(event) {
   event.preventDefault();
 
-  // if (formObject.name === "") {
-  //   undoneShare.innerHTML = "Lo siento 😓, debes rellenar tu nombre";
-  //   cardDoneCollapsable.classList.remove('hidden');
-  //   urlShare.classList.add('hidden')
-  //   undoneTwitter.classList.add('hidden')
-  // } else if (formObject.job === "") {
-  //   undoneShare.innerHTML = "Oops! Tienes que rellenar tu puesto de trabajo!";
-  //   cardDoneCollapsable.classList.remove('hidden');
-  //   urlShare.classList.add('hidden')
-  // } else if (formObject.photo === "") {
-  //   undoneShare.innerHTML = "Oops! Tienes que subir tu foto!";
-  //   cardDoneCollapsable.classList.remove('hidden');
-  //   urlShare.classList.add('hidden')
-  //   undoneTwitter.classList.add('hidden')
-  // } else if (formObject.email === "") {
-  //   undoneShare.innerHTML = "Oops! Tienes que rellenar tu email!";
-  //   cardDoneCollapsable.classList.remove('hidden');
-  //   urlShare.classList.add('hidden')
-  // } else if (!validateEmail(formObject.email)) {
-  //   undoneShare.innerHTML = "Oops! no has puesto bien el email =(";
-  //   cardDoneCollapsable.classList.remove('hidden');
-  //   urlShare.classList.add('hidden')
-  // } else if (formObject.phone === "") {
-  //   undoneShare.innerHTML = "Oops! Tienes que rellenar tu teléfono!";
-  //   cardDoneCollapsable.classList.remove('hidden');
-  //   urlShare.classList.add('hidden')
-  // } else if (!validatePhone(formObject.phone)) {
-  //   undoneShare.innerHTML = "Oops! no has puesto bien el número =(";
-  //   cardDoneCollapsable.classList.remove('hidden');
-  //   urlShare.classList.add('hidden')
-  // } else if (formObject.linkedin === "") {
-  //   undoneShare.innerHTML =
-  //     "Oops! Tienes que rellenar tu usuario de LinkedIn!";
-  //     cardDoneCollapsable.classList.remove('hidden');
-  //     urlShare.classList.add('hidden')
-  // } else if (formObject.github === "") {
-  //   undoneShare.innerHTML =
-  //     "Oops! Tienes que rellenar tu usuario de GitHub!";
-  //     cardDoneCollapsable.classList.remove('hidden');
-  //     urlShare.classList.add('hidden')
-  // } else {
     fetch("https://awesome-profile-cards.herokuapp.com/card", {
       method: "POST",
       body: JSON.stringify(formObject),
@@ -68,7 +27,26 @@ function handleShareBtn(event) {
           cardDoneCollapsable.classList.remove("hidden");
           undoneShare.classList.add("hidden");
           undoneTwitter.classList.add("hidden");
-          urlShare.innerHTML = "error:" + data.error;
+
+          if (formObject.name === "") {
+            urlShare.innerHTML = "Lo siento 😓, debes rellenar tu nombre";
+          } else if (formObject.job === "") {
+            urlShare.innerHTML = "Lo siento 😓, debes rellenar tu profesión";
+          } else if (formObject.photo === "") {
+            urlShare.innerHTML = "Lo siento 😓, debes rellenar tu foto";
+          }  else if (formObject.email === "") {
+            urlShare.innerHTML = "Lo siento 😓, debes rellenar tu email";
+          } else if (!validateEmail(formObject.email)) {
+            urlShare.innerHTML = "Lo siento 😓, debes rellenar bien tu email, falta un @ o algo 😉";
+          } else if (formObject.phone === "") {
+            urlShare.innerHTML = "Lo siento 😓, debes rellenar tu móvil";
+          } else if (!validatePhone(formObject.phone)) {
+            urlShare.innerHTML = "Lo siento 😓, debes rellenar bien tu móvil, falta algo 😉";
+          } else if (formObject.linkedin === "") {
+            urlShare.innerHTML = "Lo siento 😓, debes rellenar tu linkedin";
+          } else if (formObject.github === "") {
+            urlShare.innerHTML = "Lo siento 😓, debes rellenar tu github";
+          }
         }
       });
   }

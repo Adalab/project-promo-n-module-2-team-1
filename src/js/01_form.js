@@ -122,3 +122,15 @@ function handledFormElUpdate(event) {
 formEl.addEventListener("change", handledFormElUpdate);
 
 // ! importante saber cual es el target y el currentTarget de la función, en este caso el target=cada elemento del formulario que tiene el foco puesto y el currentTarget=el formulario entero
+
+
+function validateEmail(email) {
+  const re =
+    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
+}
+
+function validatePhone(phone) {
+  const ph = /^([9,8,7,6]{1})+([0-9]{8})$/;
+  return ph.test(phone);
+}
