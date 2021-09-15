@@ -3,6 +3,7 @@ const shareBtn = document.querySelector(".js_share--btn");
 const urlShare = document.querySelector(".js_url");
 const undoneShare = document.querySelector(".js_undone");
 const undoneTwitter = document.querySelector(".js_undone2");
+const twitterLink = document.querySelector('js_twitter_link'); 
 
 
 function handleShareBtn(event) {
@@ -23,6 +24,9 @@ function handleShareBtn(event) {
 
         if (data.success) {
           cardDoneCollapsable.classList.remove("hidden");
+          const textCard = "Echa un vistazo a mi tarjeta de visita 🌱 ";
+          twitterLink.href = `https://twitter.com/intent/tweet?text=${textCard}&url=${data.cardURL}&hashtags=Adalabers,JavaScript,PromoMileva,week7of12`;
+
         } else {
           cardDoneCollapsable.classList.remove("hidden");
           undoneShare.classList.add("hidden");
