@@ -17,8 +17,8 @@ const itemChangeColor = document.querySelectorAll(".js_item");
 // * hacemos el objeto que comprende todo el formulario: diseña y rellena
 const formObject = {
   palette: "",
-  name: "",
-  job: "",
+  name: "Nombre Apellido",
+  job: "Front-end developer",
   phone: "",
   email: "",
   linkedin: "",
