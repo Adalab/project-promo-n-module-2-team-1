@@ -3,7 +3,7 @@ const shareBtn = document.querySelector(".js_share--btn");
 const urlShare = document.querySelector(".js_url");
 const undoneShare = document.querySelector(".js_undone");
 const undoneTwitter = document.querySelector(".js_undone2");
-const twitterLink = document.querySelector('js_twitter_link'); 
+const twitterLink = document.querySelector('.js_twitter_link'); 
 
 
 function handleShareBtn(event) {
@@ -23,9 +23,10 @@ function handleShareBtn(event) {
         urlShare.href = data.cardURL;
 
         if (data.success) {
+          undoneTwitter.classList.remove("hidden");
           cardDoneCollapsable.classList.remove("hidden");
-          const textCard = "Echa un vistazo a mi tarjeta de visita 🌱 ";
-          twitterLink.href = `https://twitter.com/intent/tweet?text=${textCard}&url=${data.cardURL}&hashtags=Adalabers,JavaScript,PromoMileva,week7of12`;
+          const textCard = "Mira mi tarjeta profesional 👩🏻‍💻 y contáctame para colaborar 🤳🏻 &hashtags=Adalabers,JavaScript,PromoNerea,teamUndefined";
+          twitterLink.href = `https://twitter.com/intent/tweet?text=${textCard}&url=${data.cardURL}`;
 
         } else {
           cardDoneCollapsable.classList.remove("hidden");
@@ -33,23 +34,25 @@ function handleShareBtn(event) {
           undoneTwitter.classList.add("hidden");
 
           if (formObject.name === "") {
-            urlShare.innerHTML = "Lo siento 😓, debes rellenar tu nombre";
+            urlShare.innerHTML = "Ups❕ 😓, debes rellenar tu nombre";
           } else if (formObject.job === "") {
-            urlShare.innerHTML = "Lo siento 😓, debes rellenar tu profesión";
+            urlShare.innerHTML = "Ups❕ 😓, debes rellenar tu profesión";
           } else if (formObject.photo === "") {
-            urlShare.innerHTML = "Lo siento 😓, debes rellenar tu foto";
+            urlShare.innerHTML = "Ups❕ 😓, debes rellenar tu foto";
           }  else if (formObject.email === "") {
-            urlShare.innerHTML = "Lo siento 😓, debes rellenar tu email";
+            urlShare.innerHTML = "Ups❕ 😓, debes rellenar tu email";
           } else if (!validateEmail(formObject.email)) {
-            urlShare.innerHTML = "Lo siento 😓, debes rellenar bien tu email, falta un @ o algo 😉";
+            urlShare.innerHTML = "Ups❕ 😓, debes rellenar correctamente tu email, falta un @ o algo más 😉";
           } else if (formObject.phone === "") {
-            urlShare.innerHTML = "Lo siento 😓, debes rellenar tu móvil";
+            urlShare.innerHTML = "Ups❕ 😓, debes rellenar tu móvil";
           } else if (!validatePhone(formObject.phone)) {
-            urlShare.innerHTML = "Lo siento 😓, debes rellenar bien tu móvil, falta algo 😉";
+            urlShare.innerHTML = "Ups❕ 😓, debes rellenar completo tu móvil, falta algo 😉";
           } else if (formObject.linkedin === "") {
-            urlShare.innerHTML = "Lo siento 😓, debes rellenar tu linkedin";
+            urlShare.innerHTML = "Ups❕ 😓, debes rellenar tu linkedin";
           } else if (formObject.github === "") {
-            urlShare.innerHTML = "Lo siento 😓, debes rellenar tu github";
+            urlShare.innerHTML = "Ups❕ 😓, debes rellenar tu github";
+          } else if (formObject.palette === ""){
+            urlShare.innerHTML = "Ups❕ 😓, debes escojer una paleta de colores 🌈";
           }
         }
       });
