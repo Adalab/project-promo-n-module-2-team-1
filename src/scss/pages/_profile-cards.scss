@@ -26,10 +26,11 @@
 }
 
 
-.hidden .hidden-content {
-  display: none
+.hide{
+  display:none;
 }
 
-.hidden .hidden__icon {
-  transform: rotate(180deg)
+.arrow{
+  transform: rotate(180deg);
+
 }
